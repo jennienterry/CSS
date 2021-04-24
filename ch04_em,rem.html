@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 20px;
+      }
+      .cls1 {
+        font-size: 1.5em;
+        padding: 1em;
+      } /* padding이 기준값이 됨 / padding 값은 30px */
+      .cls1_1 {
+        font-size: 1em;
+      }
+      .cls2 {
+        font-size: 1.4em;
+      }
+      .cls2_1 {
+        font-size: 1em;
+      }
+      .cls3 {
+        font-size: 1.4rem;
+      }
+      .cls4 {
+        font-size: 1.4rem;
+      }
+    </style>
+    <!-- 20px보다 1.4배 커진 것임 -->
+  </head>
+  <body>
+    원래크기
+    <div class="cls1">
+      안녕하세요
+      <div class="cls2">
+        <!-- 1.4배 상속받고도 1.4 또 더 커짐 -->
+        안녕하세요
+        <div class="cls2_1"></div>
+      </div>
+    </div>
+    <div class="cls3">
+      Hello
+      <div class="cls4">Hello</div>
+    </div>
+  </body>
+</html>
